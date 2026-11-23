@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dayana Caterín Rodríguez Briceño | Innovación e IA</title>
+<meta name="description" content="Ingeniera Mecatrónica, Magíster en Gestión de la Innovación Tecnológica y MBA en curso. Llevo ideas de innovación hasta su implementación: portafolio de IA, pilotos y escalamiento en Compensar.">
+<meta property="og:title" content="Dayana Caterín Rodríguez Briceño | Innovación e IA">
+<meta property="og:description" content="Llevo ideas de innovación hasta su implementación. 30 experimentos y pilotos de IA en 2026, 9 escalados.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --negro:#0B0B0B;
+    --negro2:#161616;
+    --blanco:#FFFFFF;
+    --hueso:#F6F3EC;
+    --oro:#C9A227;
+    --oro-claro:#E3C766;
+    --oro-profundo:#8A6A0F;
+    --gris:#6b6b6b;
+    --gris-claro:#bdbdbd;
+    --linea:#e6e1d4;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--blanco);color:var(--negro);font-family:'DM Sans',system-ui,sans-serif;line-height:1.6;font-size:17px}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2;margin:0;color:var(--negro)}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .regla{display:block;width:56px;height:3px;background:var(--oro);margin:0 0 18px}
+
+  header.nav{position:sticky;top:0;z-index:20;background:rgba(11,11,11,.94);backdrop-filter:blur(8px);border-bottom:1px solid #2a2a2a}
+  header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  header.nav .marca{font-family:'Playfair Display',serif;font-weight:700;color:var(--blanco);text-decoration:none;letter-spacing:.02em}
+  header.nav .marca b{color:var(--oro)}
+  header.nav nav a{margin-left:22px;text-decoration:none;color:#e8e8e8;font-size:15px;font-weight:500}
+  header.nav nav a:hover{color:var(--oro)}
+  @media(max-width:760px){header.nav nav{display:none}}
+
+  .portada{background:var(--negro);color:var(--blanco);padding:80px 0 88px;position:relative;overflow:hidden}
+  .portada::after{content:"";position:absolute;right:-160px;top:-160px;width:520px;height:520px;border:1px solid rgba(201,162,39,.35);border-radius:50%}
+  .portada .wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center;position:relative;z-index:1}
+  .etiqueta{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);margin-bottom:16px}
+  .portada h1{color:var(--blanco);font-size:clamp(36px,5.6vw,60px)}
+  .portada .frase{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,30px);color:var(--oro-claro);margin:20px 0 14px;font-style:italic}
+  .portada p.rol{color:#d6d6d6;margin:0 0 30px;max-width:540px}
+  .botones{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:12px 24px;border-radius:4px;font-weight:700;text-decoration:none;font-size:15px;letter-spacing:.03em;border:2px solid var(--oro);color:var(--oro);transition:.15s}
+  .btn:hover{background:var(--oro);color:var(--negro)}
+  .btn.primario{background:var(--oro);color:var(--negro)}
+  .btn.primario:hover{background:var(--oro-claro);border-color:var(--oro-claro)}
+  .marco{justify-self:center;position:relative;width:min(340px,82%)}
+  .marco::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--oro);border-radius:6px}
+  .marco img{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 12%;border-radius:6px;background:#222}
+  @media(max-width:860px){.portada .wrap{grid-template-columns:1fr}.marco{order:-1;width:220px}}
+
+  .cifras{background:var(--blanco);padding:44px 0;border-bottom:1px solid var(--linea)}
+  .cifras .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+  .cifras .num{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;line-height:1}
+  .cifras .num::after{content:"";display:block;width:28px;height:3px;background:var(--oro);margin:12px auto 10px}
+  .cifras .txt{font-size:14px;color:var(--gris)}
+  @media(max-width:720px){.cifras .wrap{grid-template-columns:repeat(2,1fr)}}
+
+  section{padding:80px 0}
+  section h2{font-size:clamp(28px,4vw,40px);margin-bottom:10px}
+  section .sub{color:var(--gris);margin:0 0 38px;max-width:640px}
+  .sobre p{max-width:720px;margin:0 0 16px}
+
+  .graficas{background:var(--negro);color:var(--blanco)}
+  .graficas h2{color:var(--blanco)}
+  .graficas .sub{color:var(--gris-claro)}
+  .rejilla{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  @media(max-width:860px){.rejilla{grid-template-columns:1fr}}
+  .panel{background:var(--negro2);border:1px solid #2c2c2c;border-radius:10px;padding:26px 26px 20px}
+  .panel.ancho{grid-column:1/-1}
+  .panel h3{color:var(--blanco);font-size:21px;margin-bottom:4px}
+  .panel .nota{color:var(--gris-claro);font-size:14px;margin:0 0 14px}
+  .panel svg{display:block;width:100%;height:auto;overflow:visible}
+  .pie{color:#8d8d8d;font-size:13px;margin-top:22px}
+  .tick text{fill:#bdbdbd;font-size:12px;font-family:'DM Sans',sans-serif}
+  .tick line,.domain{stroke:#3a3a3a}
+  .etq{fill:#f2f2f2;font-family:'DM Sans',sans-serif;font-size:14px}
+  .val{fill:#C9A227;font-family:'Playfair Display',serif;font-weight:700;font-size:16px}
+
+  .casos{background:var(--hueso)}
+  .tarjetas{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+  .tarjeta{background:var(--blanco);border:1px solid var(--linea);border-radius:6px;padding:26px;display:flex;flex-direction:column;border-top:4px solid var(--oro)}
+  .tarjeta h3{font-size:21px;margin-bottom:14px}
+  .tarjeta dl{margin:0;flex:1}
+  .tarjeta dt{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--oro-profundo);margin-top:10px}
+  .tarjeta dd{margin:2px 0 0;font-size:15.5px}
+  .resultado{margin-top:16px;padding:12px 0 0 14px;border-top:1px dashed var(--linea);border-left:3px solid var(--oro);font-weight:700;font-size:16.5px}
+  .enparalelo{margin-top:26px;background:var(--negro);color:#f1f1f1;border-radius:6px;padding:22px 26px}
+  .enparalelo strong{color:var(--oro)}
+
+  .linea{position:relative;margin-left:8px;padding-left:28px;border-left:2px solid var(--linea)}
+  .hito{position:relative;margin-bottom:32px}
+  .hito::before{content:"";position:absolute;left:-38px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--oro);border:3px solid var(--blanco)}
+  .hito .fecha{font-size:14px;color:var(--gris);font-weight:500}
+  .hito h3{font-size:20px;margin:2px 0 4px}
+  .hito .emp{font-weight:700}
+  .hito p{margin:6px 0 0;max-width:720px}
+
+  .tinte{background:var(--hueso)}
+  .dos{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  @media(max-width:860px){.dos{grid-template-columns:1fr}}
+  .lista{list-style:none;margin:20px 0 0;padding:0}
+  .lista li{padding:13px 0;border-bottom:1px solid var(--linea)}
+  .lista li small{display:block;color:var(--gris)}
+  .grupo{margin-bottom:22px}
+  .grupo h3{font-size:16px;font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--oro-profundo);margin-bottom:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips span{background:var(--blanco);border:1px solid var(--negro);padding:6px 14px;border-radius:999px;font-size:15px}
+
+  .contacto{background:var(--negro);color:var(--blanco)}
+  .contacto h2{color:var(--blanco)}
+  .contacto .sub{color:var(--gris-claro)}
+  .contacto .datos{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+  footer{background:var(--negro);border-top:1px solid #2a2a2a;padding:22px 0;text-align:center;color:#8d8d8d;font-size:14px}
+
+  .rejilla{display:grid;grid-template-columns:1fr;gap:28px}
+  .pb{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:start}
+  @media(max-width:900px){.pb{grid-template-columns:1fr;gap:18px}}
+  .pder p{margin:0 0 12px;color:#e2e2e2;font-size:16px}
+  .pder h4{margin:18px 0 8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--oro)}
+  .pder .dato{font-family:'Playfair Display',serif;font-size:20px;color:var(--oro-claro);border-left:3px solid var(--oro);padding-left:14px;margin:14px 0}
+  .pista{color:#8d8d8d;font-size:13px;margin:8px 0 0}
+  .info{margin-top:12px;border:1px solid #333;border-left:3px solid var(--oro);border-radius:6px;padding:12px 16px;background:#101010;min-height:64px}
+  .info strong{display:block;color:var(--oro-claro);font-size:15px;margin-bottom:4px}
+  .info p{margin:0;font-size:15px;color:#dcdcdc}
+  .info .met{display:block;margin-top:8px;font-family:'Playfair Display',serif;color:var(--oro);font-size:18px}
+  .info.grande{margin-top:0;padding:20px 22px;min-height:200px}
+  .info.grande p{font-size:16px}
+  .botonera{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:4px}
+  .botonera button{font:inherit;font-size:13.5px;cursor:pointer;background:transparent;color:#e8e8e8;border:1px solid #4a4a4a;border-radius:999px;padding:6px 12px;transition:.15s}
+  .botonera button:hover{border-color:var(--oro);color:var(--oro)}
+  .botonera button[aria-pressed="true"]{background:var(--oro);border-color:var(--oro);color:var(--negro);font-weight:700}
+  .lectura{display:flex;flex-wrap:wrap;gap:6px 22px;margin-bottom:10px;font-size:15px;color:#cfcfcf}
+  .lectura b{font-family:'Playfair Display',serif;font-size:30px;color:var(--oro);display:block;line-height:1.1}
+  .lectura span small{display:block;font-size:12px;color:#8d8d8d;letter-spacing:.06em;text-transform:uppercase}
+  .deslizador{display:block;margin-top:6px;font-size:14px;color:#bdbdbd}
+  input[type=range]{width:100%;accent-color:#C9A227;height:28px;cursor:pointer}
+  .clic{cursor:pointer}
+  .avance{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;font-size:14px;color:#bdbdbd}
+  .avance b{font-family:'Playfair Display',serif;font-size:26px;color:var(--oro)}
+  .chipsb{display:flex;flex-wrap:wrap;gap:8px}
+  .chipsb span{font-size:13.5px;padding:6px 12px;border-radius:999px;border:1px solid #4a4a4a;color:#e8e8e8}
+  .chipsb .ok{border-color:var(--oro);color:var(--oro-claro)}
+  .chipsb .falta{border-style:dashed;border-radius:10px;color:#cfcfcf}
+  .ver{display:inline-block;margin-top:14px;font-size:14px;font-weight:700;color:var(--oro-profundo);text-decoration:none;border-bottom:1px solid var(--oro)}
+  .ver:hover{color:var(--negro)}
+  .panel{scroll-margin-top:80px}
+
+
+  /* todo en negro */
+  body{background:var(--negro);color:#e6e6e6}
+  h1,h2,h3{color:var(--blanco)}
+  .cifras{background:var(--negro);border-bottom:1px solid #2a2a2a}
+  .cifras .num{color:var(--blanco)} .cifras .txt{color:var(--gris-claro)}
+  section{border-top:1px solid #222}
+  .portada{border-top:0}
+  .tinte{background:var(--negro)}
+  .hito::before{border-color:var(--negro)}
+  .linea{border-left-color:#333}
+  .hito .fecha{color:var(--gris-claro)}
+  .lista li{border-bottom-color:#2a2a2a} .lista li small{color:var(--gris-claro)}
+  .grupo h3{color:var(--oro)}
+  .chips span{background:transparent;border-color:#4a4a4a;color:#f0f0f0}
+  section .sub{color:var(--gris-claro)}
+  .portada .subtit{color:var(--oro-claro);font-weight:500;letter-spacing:.04em;margin:-14px 0 28px;font-size:16px}
+  #g-cultura text{font-family:'DM Sans',sans-serif}
+
+
+  .lang{font:inherit;font-size:13px;font-weight:700;letter-spacing:.04em;cursor:pointer;background:transparent;color:var(--oro);border:1px solid var(--oro);border-radius:999px;padding:6px 14px;margin-left:18px;transition:.15s;white-space:nowrap}
+  .lang:hover{background:var(--oro);color:var(--negro)}
+  header.nav .wrap{gap:12px}
+  header.nav nav{margin-left:auto}
+  @media(max-width:760px){.lang{margin-left:auto}}
+  .botonera button.pend{border-style:dashed}
+
+  @media (prefers-reduced-motion:no-preference){
+    .aparece{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+    .aparece.visto{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="marca" href="#inicio">Dayana <b>Rodríguez</b></a>
+    <nav>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Educación</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="lang" id="btn-lang" type="button">Language US</button>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="portada" style="padding:80px 0 88px">
+    <div class="wrap">
+      <div>
+        <h1>Dayana Caterín Rodríguez Briceño</h1>
+        <p class="frase">Llevo ideas de innovación hasta su implementación.</p>
+        <p class="rol">Especialista en innovación en Compensar. Ingeniera Mecatrónica.</p>
+        <p class="subtit">Master in Technology Innovation · Master in Business Administration</p>
+        <div class="botones">
+          <a class="btn primario" href="https://www.linkedin.com/in/dayana-caterin-rodriguez-brice%C3%B1o" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" id="cv-hero" href="Dayana-Rodriguez-CV-ES.pdf" target="_blank" rel="noopener">Hoja de vida</a>
+          <a class="btn" href="https://wa.me/573105665620" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="marco">
+        <img src="foto.jpg" alt="Retrato de Dayana Caterín Rodríguez Briceño" width="720" height="965">
+      </div>
+    </div>
+  </section>
+
+  <div class="cifras">
+    <div class="wrap">
+      <div><div class="num">30</div><div class="txt">experimentos y pilotos de IA en 2026</div></div>
+      <div><div class="num">9</div><div class="txt">soluciones escaladas</div></div>
+      <div><div class="num">300</div><div class="txt">colaboradores en el programa de cultura de IA</div></div>
+      <div><div class="num">+5.000</div><div class="txt">conversaciones atendidas por un agente en WhatsApp</div></div>
+    </div>
+  </div>
+
+  <section id="sobre" class="sobre">
+    <div class="wrap">
+      <span class="regla"></span>
+      <h2>Sobre mí</h2>
+      <p class="sub">Qué hago, en qué soy fuerte y qué busco.</p>
+      <p>Llevo casi cinco años en Compensar y hoy estoy a cargo del portafolio de iniciativas de IA de Financiamiento y Alianzas. Defino qué se prioriza, valido cada idea con los negocios y habilito a los equipos de ciencia de datos, tecnología y proveedores para que las soluciones se implementen.</p>
+      <p>Lidero un equipo de 5 personas y trabajo con riesgo, compras, proyectos y los negocios, respondiendo por los resultados desde la idea hasta la implementación. Aplico experimentación, validación con usuarios y metodologías como SIT, Design Thinking y Lean Startup.</p>
+      <p>Me interesa escalar la innovación y la adopción de IA en las organizaciones.</p>
+    </div>
+  </section>
+
+  <section id="resultados" class="graficas">
+    <div class="wrap">
+      <span class="regla"></span>
+      <h2>Resultados</h2>
+      <p class="sub">Cada iniciativa de IA de Financiamiento y Alianzas, con su gráfica y su detalle. Pasa el cursor o haz clic para explorar.</p>
+      <div class="rejilla">
+
+        <div class="panel" id="p-embudo">
+          <h3>Del piloto a la escala</h3>
+          <div class="pb">
+            <div class="pizq">
+              <div id="g-embudo"></div>
+              <p class="pista">Pasa el cursor o haz clic en una barra.</p>
+              <div class="info" id="i-embudo"></div>
+            </div>
+            <div class="pder">
+              <p>En 2026 gestioné un portafolio de 30 experimentos y pilotos de IA. Cada uno se prueba primero a pequeña escala para validar si genera valor antes de invertir más. De los 30, 9 escalaron y hoy operan.</p>
+              <h4>Las 9 que escalaron</h4>
+              <div class="botonera" id="b-escalados"></div>
+              <div class="info" id="i-escalados"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-auditoria">
+          <h3>Auditoría de llamadas</h3>
+          <div class="pb">
+            <div class="pizq">
+              <div class="lectura" id="r-llamadas"></div>
+              <div id="g-cobertura"></div>
+              <label class="deslizador" for="s-llamadas">Llamadas que llegan por día
+                <input type="range" id="s-llamadas" min="100" max="1000" step="10" value="300">
+              </label>
+            </div>
+            <div class="pder">
+              <p>Antes, dos personas auditaban las llamadas de monitoreo y fraude, y su capacidad era de unas 30 llamadas al día. Si llegaban 300, la cobertura era del 10%; si llegaban 500, bajaba al 6%. Mientras más llamadas, menos porcentaje auditado.</p>
+              <p>Mueve el deslizador para ver cómo cambia la cobertura manual. DIVA, un transcriptor con un agente en Copilot que evalúa la calidad de cada llamada, audita el 100% y redujo 80% el tiempo de auditoría.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-reduccion">
+          <h3>Tiempo y errores que se eliminaron</h3>
+          <div class="pb">
+            <div class="pizq">
+              <div id="g-reduccion"></div>
+              <p class="pista">Haz clic en una barra para ver qué se eliminó.</p>
+            </div>
+            <div class="pder">
+              <p>Reducción porcentual de tiempo y de errores frente al proceso anterior. Los errores eran sobre todo humanos: digitación, información mal documentada, incompleta o con una redacción que no se entendía.</p>
+              <div class="info" id="i-reduccion"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-estados">
+          <h3>Estados financieros para crédito</h3>
+          <div class="pb">
+            <div class="pizq"><div id="g-estados"></div></div>
+            <div class="pder">
+              <p>Los analistas de crédito transcribían a mano los estados financieros, con mucho tiempo y errores de digitación. Habilité con un proveedor una solución con OCR que extrae la información de los PDF y la estructura en Excel.</p>
+              <p class="dato">95% menos tiempo y 90% menos errores.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-analitica">
+          <h3>Analítica con menos carga</h3>
+          <div class="pb">
+            <div class="pizq">
+              <div id="g-analitica"></div>
+              <p class="pista">Índice: el tiempo del proceso anterior equivale a 100.</p>
+            </div>
+            <div class="pder">
+              <p>El equipo de analítica no tenía tiempo para documentar sus modelos ni para atender el volumen de solicitudes. Gestioné agentes de IA que generan la documentación y los diccionarios de datos.</p>
+              <p class="dato">90% menos tiempo en documentación y en diccionarios de datos.</p>
+              <p>Las solicitudes de datos también pasaron de 3 días a minutos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-aceptacion">
+          <h3>Aceptación de los personajes con IA</h3>
+          <div class="pb">
+            <div class="pizq">
+              <div id="g-aceptacion"></div>
+              <p class="pista">Haz clic en la gráfica para repetir la animación.</p>
+            </div>
+            <div class="pder">
+              <p>Se hizo un focus group con el grupo financiero para validar el contenido educativo generado con IA: si les gustaba que el personaje fuera un personaje de IA.</p>
+              <p class="dato">29 de 30 participantes lo validaron: 96,6% de aceptación.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-canales">
+          <h3>Dos canales, dos resultados</h3>
+          <div class="pb">
+            <div class="pizq">
+              <div id="g-canales"></div>
+              <p class="pista">Haz clic en un sector. Para volver al resumen, haz clic en el centro.</p>
+            </div>
+            <div class="pder">
+              <div class="info grande" id="i-canales"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-cultura">
+          <h3>Cultura de uso de IA</h3>
+          <div class="pb">
+            <div class="pizq">
+              <div id="g-cultura"></div>
+              <p class="pista">Pasa el cursor por una herramienta para ver sus conexiones.</p>
+            </div>
+            <div class="pder">
+              <p>Los 300 colaboradores de la unidad de Financiamiento y Alianzas empezaron a usar Copilot. Habilité las licencias y las herramientas, acompañé la adopción tecnológica con capacitaciones y talleres prácticos, y se logró que lo usaran en su trabajo.</p>
+              <h4>Filtra por aplicación</h4>
+              <div class="botonera" id="b-cultura"></div>
+              <div class="info" id="i-cultura"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-huellas">
+          <h3>Huellas Naranja</h3>
+          <div class="pb">
+            <div class="pizq">
+              <div id="g-huellas"></div>
+              <p class="pista">Pasa el cursor o haz clic en cada etapa.</p>
+              <div class="info" id="i-huellas"></div>
+            </div>
+            <div class="pder">
+              <p>Huellas Naranja es la comunidad de Compensar para familias con mascotas. Compensar cuenta con cerca de 1.000.000 de afiliados, y la comunidad nació para acercar la cultura animal a las familias.</p>
+              <p>Participé en el ciclo completo: ideación, validación con usuarios y escalamiento, hasta entregarla al equipo que hoy la opera.</p>
+              <p class="dato">En 2024 la dejé con 300 familias que ya accedían al beneficio y seguían creciendo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="p-proyecto">
+          <h3>Proyecto personal: selección asistida por IA</h3>
+          <div class="pb">
+            <div class="pizq">
+              <div id="g-proyecto"></div>
+              <p class="pista">Haz clic en cada paso del proceso.</p>
+              <div class="info" id="i-proyecto"></div>
+            </div>
+            <div class="pder">
+              <p>Una herramienta que ayuda a recursos humanos a preseleccionar candidatos para cargos técnicos. Es un proceso más humano: los perfiles técnicos son más precisos y las personas que participan no viven la incertidumbre de no saber cómo va su proceso. Lo lidero y planeo, y un equipo técnico lo desarrolla.</p>
+              <div class="avance"><span>Avance</span><b>70%</b></div>
+              <div id="g-avance"></div>
+              <h4>Qué ya funciona</h4>
+              <div class="botonera" id="b-ok"></div>
+              <h4>Qué falta</h4>
+              <div class="botonera" id="b-falta"></div>
+              <div class="info" id="i-comp"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="pie">Los porcentajes comparan el proceso antes y después de cada solución.</p>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <div class="wrap">
+      <span class="regla"></span>
+      <h2>Experiencia</h2>
+      <p class="sub">Tres cargos en Compensar y un camino previo en innovación.</p>
+      <div class="linea">
+        <div class="hito">
+          <span class="fecha">Mayo 2026 a hoy</span>
+          <h3>Especialista en innovación</h3>
+          <span class="emp">Compensar</span>
+          <p>Gestiono el portafolio de iniciativas de IA de Financiamiento y Alianzas: 30 experimentos y pilotos en 2026, 9 escalados.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Mayo 2023 a mayo 2026</span>
+          <h3>Profesional en innovación y desarrollo digital senior</h3>
+          <span class="emp">Compensar</span>
+          <p>Ascendida al iniciar el escalamiento de Huellas Naranja, que saqué adelante hasta entregarla al equipo que hoy la opera.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Febrero 2022 a mayo 2023</span>
+          <h3>Profesional en innovación y desarrollo digital junior</h3>
+          <span class="emp">Compensar</span>
+          <p>Participé en la ideación y validación de Huellas Naranja, la comunidad de Compensar para familias con mascotas.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">Junio 2020 a agosto 2021</span>
+          <h3>Gestor de innovación</h3>
+          <span class="emp">CVR Ingeniería del Conocimiento S.A.S</span>
+          <p>Diseñé e implementé el proyecto de gestión de sistemas de información e innovación en cultivo de arándanos, de la conceptualización a la implementación.</p>
+        </div>
+        <div class="hito">
+          <span class="fecha">2021 a 2023</span>
+          <h3>Docencia</h3>
+          <span class="emp">Universidad de los Andes</span>
+          <p>Profesora de cátedra de modelado digital y asistente docente de la Maestría en Gestión de la Innovación Tecnológica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="educacion" class="tinte">
+    <div class="wrap dos">
+      <div>
+        <span class="regla"></span>
+        <h2>Educación</h2>
+        <ul class="lista">
+          <li><strong>MBA (Master in Business Administration)</strong><small>Universidad de los Andes · en curso</small></li>
+          <li><strong>Magíster en Gestión de la Innovación Tecnológica</strong><small>Universidad de los Andes · 2021</small></li>
+          <li><strong>Ingeniería Mecatrónica</strong><small>Universidad Militar Nueva Granada · 2019</small></li>
+        </ul>
+      </div>
+      <div>
+        <span class="regla"></span>
+        <h2>Formación complementaria</h2>
+        <ul class="lista">
+          <li><strong>Actualización en Coaching de innovación</strong><small>SIT Colombia · octubre 2026</small></li>
+          <li><strong>IA: usos corporativos de Copilot en Microsoft 365</strong><small>Universidad Externado de Colombia · febrero 2026</small></li>
+          <li><strong>IA generativa al interior de la compañía</strong><small>INNOVA · octubre 2025</small></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <div class="wrap">
+      <span class="regla"></span>
+      <h2>Habilidades</h2>
+      <p class="sub">Agrupadas por tipo.</p>
+      <div class="grupo"><h3>Gestión</h3><div class="chips"><span>Portafolios de innovación e IA</span><span>Priorización</span><span>Liderazgo de equipos transversales</span><span>Gestión del cambio y cultura de IA</span><span>Presentación de resultados a la dirección</span></div></div>
+      <div class="grupo"><h3>Metodologías</h3><div class="chips"><span>SIT</span><span>Design Thinking</span><span>Lean Startup</span><span>Experimentación</span><span>Validación con usuarios</span></div></div>
+      <div class="grupo"><h3>Herramientas de IA</h3><div class="chips"><span>Microsoft 365 Copilot</span><span>Agentes conversacionales</span><span>Higgsfield</span><span>Midjourney</span><span>Runway</span></div></div>
+      <div class="grupo"><h3>Idiomas</h3><div class="chips"><span>Español</span><span>Inglés B1</span></div></div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="wrap">
+      <span class="regla"></span>
+      <h2>Contacto</h2>
+      <p class="sub">Bogotá D.C., Colombia. Hablemos.</p>
+      <div class="datos">
+        <a class="btn primario" href="mailto:dacaterin.rodriguez27@gmail.com">Email</a>
+        <a class="btn" href="https://wa.me/573105665620" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="https://www.linkedin.com/in/dayana-caterin-rodriguez-brice%C3%B1o" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="Dayana-Rodriguez-CV-ES.pdf" target="_blank" rel="noopener">CV español</a>
+        <a class="btn" href="Dayana-Rodriguez-CV-EN.pdf" target="_blank" rel="noopener">Resume (English)</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Dayana Caterín Rodríguez Briceño</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.2/dist/d3.min.js"></script>
+<script>
+(function(){
+  var ORO='#C9A227', ORO2='#E3C766', BL='#f2f2f2';
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var dur = reduce ? 0 : 900;
+  var EN=false;
+  try{ if(localStorage.getItem('lang')==='en'){EN=true;} }catch(e){}
+  function T(es,en){return EN?en:es;}
+  function $(id){return document.getElementById(id);}
+  function svgBase(sel,w,h,label){
+    return d3.select(sel).append('svg').attr('viewBox','0 0 '+w+' '+h).attr('role','img').attr('aria-label',label||'');
+  }
+  function info(id,t,b,m){
+    $(id).innerHTML='<strong>'+t+'</strong><p>'+b+'</p>'+(m?'<span class="met">'+m+'</span>':'');
+  }
+  function act(sel,fn){ sel.on('mouseenter',fn).on('click',fn); }
+  function pct(n){ var v=(Math.round(n*10)/10).toString(); return EN?v:v.replace('.',','); }
+  function trozos(s,n){var w=s.split(' '),out=[],cur='';w.forEach(function(x){if((cur+' '+x).trim().length>n){out.push(cur.trim());cur=x;}else{cur=(cur+' '+x).trim();}});if(cur)out.push(cur);return out;}
+
+  /* ---------- Traducción de los textos fijos de la página ---------- */
+  var DICT={
+    'Sobre mí':'About me','Resultados':'Results','Experiencia':'Experience','Educación':'Education','Habilidades':'Skills','Contacto':'Contact',
+    'Llevo ideas de innovación hasta su implementación.':'I take innovation ideas all the way to implementation.',
+    'Especialista en innovación en Compensar. Ingeniera Mecatrónica.':'Innovation specialist at Compensar. Mechatronics Engineer.',
+    'Hoja de vida':'Resume',
+    'experimentos y pilotos de IA en 2026':'AI experiments and pilots in 2026',
+    'soluciones escaladas':'solutions scaled',
+    'colaboradores en el programa de cultura de IA':'employees in the AI culture program',
+    '+5.000':'+5,000',
+    'conversaciones atendidas por un agente en WhatsApp':'conversations handled by a WhatsApp agent',
+    'Qué hago, en qué soy fuerte y qué busco.':'What I do, where I am strong and what I look for.',
+    'Llevo casi cinco años en Compensar y hoy estoy a cargo del portafolio de iniciativas de IA de Financiamiento y Alianzas. Defino qué se prioriza, valido cada idea con los negocios y habilito a los equipos de ciencia de datos, tecnología y proveedores para que las soluciones se implementen.':'I have been at Compensar for almost five years and I now run the AI initiatives portfolio of the Financing and Partnerships unit. I define what gets prioritized, validate each idea with the business areas and enable the data science, technology and vendor teams so the solutions get implemented.',
+    'Lidero un equipo de 5 personas y trabajo con riesgo, compras, proyectos y los negocios, respondiendo por los resultados desde la idea hasta la implementación. Aplico experimentación, validación con usuarios y metodologías como SIT, Design Thinking y Lean Startup.':'I lead a team of 5 and work with risk, procurement, projects and the business areas, answerable for results from idea to implementation. I apply experimentation, user validation and methodologies such as SIT, Design Thinking and Lean Startup.',
+    'Me interesa escalar la innovación y la adopción de IA en las organizaciones.':'I am interested in scaling innovation and AI adoption in organizations.',
+    'Cada iniciativa de IA de Financiamiento y Alianzas, con su gráfica y su detalle. Pasa el cursor o haz clic para explorar.':'Each AI initiative of the Financing and Partnerships unit, with its chart and detail. Hover or click to explore.',
+    'Del piloto a la escala':'From pilot to scale',
+    'Pasa el cursor o haz clic en una barra.':'Hover or click a bar.',
+    'En 2026 gestioné un portafolio de 30 experimentos y pilotos de IA. Cada uno se prueba primero a pequeña escala para validar si genera valor antes de invertir más. De los 30, 9 escalaron y hoy operan.':'In 2026 I managed a portfolio of 30 AI experiments and pilots. Each one is first tested at small scale to validate whether it creates value before investing more. Of the 30, 9 scaled and are now in operation.',
+    'Las 9 que escalaron':'The 9 that scaled',
+    'Auditoría de llamadas':'Call auditing',
+    'Llamadas que llegan por día':'Calls received per day',
+    'Antes, dos personas auditaban las llamadas de monitoreo y fraude, y su capacidad era de unas 30 llamadas al día. Si llegaban 300, la cobertura era del 10%; si llegaban 500, bajaba al 6%. Mientras más llamadas, menos porcentaje auditado.':'Before, two people audited the monitoring and fraud calls, with a capacity of about 30 calls a day. With 300 calls the coverage was 10%; with 500 it dropped to 6%. The more calls, the lower the share audited.',
+    'Mueve el deslizador para ver cómo cambia la cobertura manual. DIVA, un transcriptor con un agente en Copilot que evalúa la calidad de cada llamada, audita el 100% y redujo 80% el tiempo de auditoría.':'Move the slider to see how manual coverage changes. DIVA, a transcriber with a Copilot agent that evaluates the quality of each call, audits 100% and cut audit time by 80%.',
+    'Tiempo y errores que se eliminaron':'Time and errors eliminated',
+    'Haz clic en una barra para ver qué se eliminó.':'Click a bar to see what was eliminated.',
+    'Reducción porcentual de tiempo y de errores frente al proceso anterior. Los errores eran sobre todo humanos: digitación, información mal documentada, incompleta o con una redacción que no se entendía.':'Percentage reduction in time and errors versus the previous process. The errors were mostly human: typing mistakes and information that was poorly documented, incomplete or unclear.',
+    'Estados financieros para crédito':'Financial statements for credit',
+    'Los analistas de crédito transcribían a mano los estados financieros, con mucho tiempo y errores de digitación. Habilité con un proveedor una solución con OCR que extrae la información de los PDF y la estructura en Excel.':'Credit analysts transcribed financial statements by hand, which took a lot of time and caused typing errors. Together with a vendor I enabled an OCR solution that extracts the information from the PDFs and structures it in Excel.',
+    '95% menos tiempo y 90% menos errores.':'95% less time and 90% fewer errors.',
+    'Analítica con menos carga':'Lighter workload for analytics',
+    'Índice: el tiempo del proceso anterior equivale a 100.':'Index: the time of the previous process equals 100.',
+    'El equipo de analítica no tenía tiempo para documentar sus modelos ni para atender el volumen de solicitudes. Gestioné agentes de IA que generan la documentación y los diccionarios de datos.':'The analytics team had no time to document its models or to handle the volume of requests. I managed AI agents that generate the documentation and the data dictionaries.',
+    '90% menos tiempo en documentación y en diccionarios de datos.':'90% less time on documentation and data dictionaries.',
+    'Las solicitudes de datos también pasaron de 3 días a minutos.':'Data requests also went from 3 days to minutes.',
+    'Aceptación de los personajes con IA':'Acceptance of AI characters',
+    'Haz clic en la gráfica para repetir la animación.':'Click the chart to replay the animation.',
+    'Se hizo un focus group con el grupo financiero para validar el contenido educativo generado con IA: si les gustaba que el personaje fuera un personaje de IA.':'A focus group was run with the financial group to validate educational content generated with AI: whether they liked the character being an AI character.',
+    '29 de 30 participantes lo validaron: 96,6% de aceptación.':'29 of 30 participants validated it: 96.6% acceptance.',
+    'Dos canales, dos resultados':'Two channels, two results',
+    'Haz clic en un sector. Para volver al resumen, haz clic en el centro.':'Click a sector. To go back to the summary, click the center.',
+    'Cultura de uso de IA':'AI usage culture',
+    'Pasa el cursor por una herramienta para ver sus conexiones.':'Hover over a tool to see its connections.',
+    'Los 300 colaboradores de la unidad de Financiamiento y Alianzas empezaron a usar Copilot. Habilité las licencias y las herramientas, acompañé la adopción tecnológica con capacitaciones y talleres prácticos, y se logró que lo usaran en su trabajo.':'The 300 employees of the Financing and Partnerships unit started using Copilot. I enabled the licenses and tools, supported technology adoption with training and hands-on workshops, and they began using it in their daily work.',
+    'Filtra por aplicación':'Filter by application',
+    'Huellas Naranja':'Huellas Naranja',
+    'Pasa el cursor o haz clic en cada etapa.':'Hover or click each stage.',
+    'Huellas Naranja es la comunidad de Compensar para familias con mascotas. Compensar cuenta con cerca de 1.000.000 de afiliados, y la comunidad nació para acercar la cultura animal a las familias.':'Huellas Naranja is the Compensar community for families with pets. Compensar has close to 1,000,000 members, and the community was created to bring animal culture closer to families.',
+    'Participé en el ciclo completo: ideación, validación con usuarios y escalamiento, hasta entregarla al equipo que hoy la opera.':'I took part in the full cycle: ideation, user validation and scaling, until handing it over to the team that runs it today.',
+    'En 2024 la dejé con 300 familias que ya accedían al beneficio y seguían creciendo.':'In 2024 I left it with 300 families already using the benefit and still growing.',
+    'Proyecto personal: selección asistida por IA':'Personal project: AI-assisted selection',
+    'Haz clic en cada paso del proceso.':'Click each step of the process.',
+    'Una herramienta que ayuda a recursos humanos a preseleccionar candidatos para cargos técnicos. Es un proceso más humano: los perfiles técnicos son más precisos y las personas que participan no viven la incertidumbre de no saber cómo va su proceso. Lo lidero y planeo, y un equipo técnico lo desarrolla.':'A tool that helps human resources pre-select candidates for technical roles. It is a more human process: technical profiles are more precise and the people who take part are not left wondering how their process is going. I lead and plan it, and a technical team builds it.',
+    'Avance':'Progress',
+    'Qué ya funciona':'What already works',
+    'Qué falta':'What is missing',
+    'Los porcentajes comparan el proceso antes y después de cada solución.':'Percentages compare the process before and after each solution.',
+    'Tres cargos en Compensar y un camino previo en innovación.':'Three roles at Compensar and a previous path in innovation.',
+    'Mayo 2026 a hoy':'May 2026 to present',
+    'Especialista en innovación':'Innovation Specialist',
+    'Gestiono el portafolio de iniciativas de IA de Financiamiento y Alianzas: 30 experimentos y pilotos en 2026, 9 escalados.':'I manage the AI initiatives portfolio of Financing and Partnerships: 30 experiments and pilots in 2026, 9 scaled.',
+    'Mayo 2023 a mayo 2026':'May 2023 to May 2026',
+    'Profesional en innovación y desarrollo digital senior':'Senior Innovation and Digital Development Professional',
+    'Ascendida al iniciar el escalamiento de Huellas Naranja, que saqué adelante hasta entregarla al equipo que hoy la opera.':'Promoted when the scaling of Huellas Naranja began; I carried it forward until handing it to the team that runs it today.',
+    'Febrero 2022 a mayo 2023':'February 2022 to May 2023',
+    'Profesional en innovación y desarrollo digital junior':'Junior Innovation and Digital Development Professional',
+    'Participé en la ideación y validación de Huellas Naranja, la comunidad de Compensar para familias con mascotas.':'I took part in the ideation and validation of Huellas Naranja, the Compensar community for families with pets.',
+    'Junio 2020 a agosto 2021':'June 2020 to August 2021',
+    'Gestor de innovación':'Innovation Manager',
+    'CVR Ingeniería del Conocimiento S.A.S':'CVR Ingeniería del Conocimiento S.A.S',
+    'Diseñé e implementé el proyecto de gestión de sistemas de información e innovación en cultivo de arándanos, de la conceptualización a la implementación.':'I designed and implemented the information systems and innovation management project in blueberry farming, from conceptualization to implementation.',
+    '2021 a 2023':'2021 to 2023',
+    'Docencia':'Teaching',
+    'Universidad de los Andes':'Universidad de los Andes',
+    'Profesora de cátedra de modelado digital y asistente docente de la Maestría en Gestión de la Innovación Tecnológica.':'Adjunct professor of digital modeling and teaching assistant in the Master in Technology Innovation Management.',
+    'Universidad de los Andes · en curso':'Universidad de los Andes · in progress',
+    'Magíster en Gestión de la Innovación Tecnológica':'Master in Technology Innovation Management',
+    'Ingeniería Mecatrónica':'Mechatronics Engineering',
+    'Formación complementaria':'Additional training',
+    'Actualización en Coaching de innovación':'Innovation Coaching Update',
+    'SIT Colombia · octubre 2026':'SIT Colombia · October 2026',
+    'IA: usos corporativos de Copilot en Microsoft 365':'AI: corporate uses of Copilot in Microsoft 365',
+    'Universidad Externado de Colombia · febrero 2026':'Universidad Externado de Colombia · February 2026',
+    'IA generativa al interior de la compañía':'Generative AI inside the company',
+    'INNOVA · octubre 2025':'INNOVA · October 2025',
+    'Agrupadas por tipo.':'Grouped by type.',
+    'Gestión':'Management','Portafolios de innovación e IA':'Innovation and AI portfolios','Priorización':'Prioritization',
+    'Liderazgo de equipos transversales':'Cross-functional team leadership','Gestión del cambio y cultura de IA':'Change management and AI culture',
+    'Presentación de resultados a la dirección':'Presenting results to leadership',
+    'Metodologías':'Methodologies','Experimentación':'Experimentation','Validación con usuarios':'User validation',
+    'Herramientas de IA':'AI tools','Agentes conversacionales':'Conversational agents','Idiomas':'Languages','Español':'Spanish','Inglés B1':'English B1',
+    'Bogotá D.C., Colombia. Hablemos.':'Bogotá, Colombia. Let us talk.',
+    'CV español':'CV (Spanish)'
+  };
+  var CVES='Dayana-Rodriguez-CV-ES.pdf', CVEN='Dayana-Rodriguez-CV-EN.pdf';
+  function omitir(n){ return n.parentElement && n.parentElement.closest('svg,script,style,.info,.botonera,.lectura'); }
+  function traducirEstatico(){
+    var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null), n;
+    while((n=w.nextNode())){
+      if(omitir(n)) continue;
+      if(n.__es===undefined) n.__es=n.nodeValue;
+      var k=n.__es.replace(/\s+/g,' ').trim();
+      if(!k) continue;
+      var lead=n.__es.match(/^\s*/)[0], trail=n.__es.match(/\s*$/)[0];
+      n.nodeValue=(EN&&DICT[k])?lead+DICT[k]+trail:n.__es;
+    }
+    document.documentElement.lang=EN?'en':'es';
+    document.title=EN?'Dayana Caterín Rodríguez Briceño | Innovation and AI':'Dayana Caterín Rodríguez Briceño | Innovación e IA';
+    var cv=$('cv-hero'); if(cv) cv.setAttribute('href',EN?CVEN:CVES);
+    var bt=$('btn-lang'); if(bt){ bt.textContent=EN?'Lenguaje ES':'Language US'; bt.setAttribute('aria-label',EN?'Cambiar a español':'Switch to English'); }
+  }
+
+  /* ---------- Datos de las 9 iniciativas escaladas ---------- */
+  function INIC(){ return [
+    {n:T('Documentación de modelos','Model documentation'),m:T('90% menos tiempo','90% less time'),d:T('Agentes de IA que generan la documentación de los modelos analíticos, algo para lo que el equipo no tenía tiempo.','AI agents that generate the documentation of the analytical models, something the team had no time for.')},
+    {n:T('Historias de usuario','User stories'),m:T('Entre 40% y 70% menos tiempo de diseño','40% to 70% less design time'),d:T('Apoyo de IA para redactar las historias de usuario de los proyectos.','AI support to write the user stories of the projects.')},
+    {n:T('DIVA, auditor de llamadas','DIVA, call auditor'),m:T('Cobertura del 10% al 100% y 80% menos tiempo','Coverage from 10% to 100% and 80% less time'),d:T('Transcriptor y agente en Copilot que evalúa la calidad de cada llamada de monitoreo y fraude.','Transcriber and Copilot agent that evaluates the quality of every monitoring and fraud call.')},
+    {n:T('Diccionarios de datos','Data dictionaries'),m:T('90% menos tiempo','90% less time'),d:T('Agente de IA que construye los diccionarios de datos del equipo de analítica.','AI agent that builds the data dictionaries of the analytics team.')},
+    {n:T('Consulta de datos en lenguaje natural','Natural language data queries'),m:T('Solicitudes resueltas en cerca de 3 minutos','Requests resolved in about 3 minutes'),d:T('Agente en Teams que permite consultar datos en lenguaje natural, sin depender de que analítica atienda cada solicitud.','Teams agent that lets people query data in natural language, without waiting for analytics to handle each request.')},
+    {n:T('Bases de créditos preaprobados','Pre-approved credit databases'),m:T('De 3 días a minutos','From 3 days to minutes'),d:T('Solución en lenguaje natural que estructura de forma fácil, rápida y sencilla las bases de datos de los créditos preaprobados.','Natural language solution that structures the pre-approved credit databases in an easy, fast and simple way.')},
+    {n:T('Contenidos audiovisuales con IA','AI audiovisual content'),m:T('96,6% de aceptación (29 de 30)','96.6% acceptance (29 of 30)'),d:T('Contenido educativo con personajes generados con IA para el grupo financiero, validado en un focus group.','Educational content with AI-generated characters for the financial group, validated in a focus group.')},
+    {n:T('Vaciado de estados financieros','Financial statement extraction'),m:T('95% menos tiempo y 90% menos errores','95% less time and 90% fewer errors'),d:T('Solución con OCR, habilitada con un proveedor, que extrae la información de los PDF y la estructura en Excel para los analistas de crédito.','OCR solution, enabled with a vendor, that extracts the information from PDFs and structures it in Excel for credit analysts.')},
+    {n:T('Agente en WhatsApp','WhatsApp agent'),m:T('Más de 5.000 conversaciones en el último año','Over 5,000 conversations in the last year'),d:T('Agente informativo y transaccional que resuelve dudas sobre productos y servicios financieros y permite consultar los productos activos de cada afiliado.','Informational and transactional agent that answers questions about financial products and services and lets each member check their active products.')}
+  ]; }
+
+  function defaultsInfo(){
+    $('i-escalados').innerHTML='<p>'+T('Elige una iniciativa para ver qué hace y su métrica.','Pick an initiative to see what it does and its metric.')+'</p>';
+    $('i-reduccion').innerHTML='<p>'+T('Selecciona una barra para ver qué proceso manual operativo se eliminó.','Select a bar to see which manual operating process was eliminated.')+'</p>';
+    $('i-comp').innerHTML='<p>'+T('Elige un componente para ver cómo funciona dentro de la herramienta.','Pick a component to see how it works inside the tool.')+'</p>';
+  }
+
+  /* 1. Del piloto a la escala */
+  function embudo(){
+    var W=520,H=170;
+    var svg=svgBase('#g-embudo',W,H,T('30 experimentos y pilotos de IA en 2026, 9 escalados','30 AI experiments and pilots in 2026, 9 scaled'));
+    var x=d3.scaleLinear().domain([0,30]).range([0,W-110]);
+    var datos=[
+      {k:T('Experimentos y pilotos','Experiments and pilots'),v:30,c:'#5a5a5a',t:T('30 experimentos y pilotos','30 experiments and pilots'),b:T('Ideas de IA probadas en 2026 a pequeña escala para validar si generan valor antes de invertir más.','AI ideas tested in 2026 at small scale to validate whether they create value before investing more.')},
+      {k:T('Escalados','Scaled'),v:9,c:ORO,t:T('9 escalados (30%)','9 scaled (30%)'),b:T('Los pilotos que demostraron valor, pasaron a operación y hoy funcionan en la unidad. Los detalles están en los botones de la derecha.','The pilots that proved their value went into operation and now run in the unit. Details are in the buttons on the right.')}
+    ];
+    datos.forEach(function(d,i){
+      var y=14+i*74;
+      var g=svg.append('g').attr('class','clic').attr('tabindex',0);
+      g.append('text').attr('class','etq').attr('x',0).attr('y',y).text(d.k);
+      var r=g.append('rect').attr('x',0).attr('y',y+10).attr('height',40).attr('rx',3).attr('fill',d.c).attr('width',0);
+      r.transition().duration(dur).attr('width',x(d.v));
+      g.append('text').attr('class','val').attr('x',x(d.v)+12).attr('y',y+37).text(d.v);
+      var fn=function(){ info('i-embudo',d.t,d.b); r.attr('stroke',BL).attr('stroke-width',2); svg.selectAll('rect').filter(function(){return this!==r.node();}).attr('stroke','none'); };
+      act(g,fn);
+      g.on('keydown',function(e){ if(e.key==='Enter'||e.key===' '){fn();} });
+    });
+    info('i-embudo',T('Experimentos y pilotos','Experiments and pilots'),T('Pasa el cursor sobre una barra para ver qué significa.','Hover over a bar to see what it means.'));
+    var b=$('b-escalados'); b.innerHTML='';
+    INIC().forEach(function(it){
+      var bt=document.createElement('button'); bt.type='button'; bt.textContent=it.n; bt.setAttribute('aria-pressed','false');
+      bt.onclick=function(){
+        Array.prototype.forEach.call(b.children,function(x){x.setAttribute('aria-pressed','false');});
+        bt.setAttribute('aria-pressed','true');
+        info('i-escalados',it.n,it.d,it.m);
+      };
+      b.appendChild(bt);
+    });
+  }
+
+  /* 2. Auditoría de llamadas: deslizador */
+  var CAP=30, slBound=false, updRef=null;
+  function auditoria(){
+    var W=560,H=290,m={l:46,r:18,t:16,b:40};
+    var svg=svgBase('#g-cobertura',W,H,T('Cobertura manual de la auditoría según las llamadas por día','Manual audit coverage by calls per day'));
+    var x=d3.scaleLinear().domain([100,1000]).range([m.l,W-m.r]);
+    var y=d3.scaleLinear().domain([0,100]).range([H-m.b,m.t]);
+    svg.append('g').attr('class','tick').attr('transform','translate(0,'+(H-m.b)+')').call(d3.axisBottom(x).tickValues([100,300,500,700,1000]).tickSize(6));
+    svg.append('g').attr('class','tick').attr('transform','translate('+m.l+',0)').call(d3.axisLeft(y).tickValues([0,25,50,75,100]).tickFormat(function(d){return d+'%';}).tickSize(-(W-m.l-m.r)));
+    svg.selectAll('.tick line').attr('stroke','#262626'); svg.selectAll('.domain').remove();
+    svg.append('text').attr('class','etq').attr('x',W-m.r).attr('y',H-4).attr('text-anchor','end').style('font-size','12px').style('fill','#8d8d8d').text(T('llamadas por día','calls per day'));
+    svg.append('line').attr('x1',m.l).attr('x2',W-m.r).attr('y1',y(100)).attr('y2',y(100)).attr('stroke',ORO).attr('stroke-dasharray','6 5').attr('stroke-width',2);
+    svg.append('text').attr('class','val').attr('x',W-m.r).attr('y',y(100)+20).attr('text-anchor','end').style('font-size','14px').text(T('Con DIVA: 100%','With DIVA: 100%'));
+    var datos=d3.range(100,1001,10).map(function(c){return {c:c,p:Math.min(100,CAP/c*100)};});
+    var linea=d3.line().x(function(d){return x(d.c);}).y(function(d){return y(d.p);}).curve(d3.curveMonotoneX);
+    var path=svg.append('path').attr('d',linea(datos)).attr('fill','none').attr('stroke','#8d8d8d').attr('stroke-width',3);
+    var L=path.node().getTotalLength();
+    if(!reduce){ path.attr('stroke-dasharray',L+' '+L).attr('stroke-dashoffset',L).transition().duration(dur).attr('stroke-dashoffset',0); }
+    var guia=svg.append('line').attr('stroke',ORO).attr('stroke-width',1.5).attr('stroke-dasharray','3 4');
+    var punto=svg.append('circle').attr('r',9).attr('fill',ORO).attr('stroke','#0B0B0B').attr('stroke-width',3);
+    var rot=svg.append('text').attr('class','val').attr('text-anchor','middle').style('font-size','15px');
+    var sl=$('s-llamadas');
+    function upd(){
+      var c=+sl.value, p=Math.min(100,CAP/c*100);
+      guia.attr('x1',x(c)).attr('x2',x(c)).attr('y1',y(p)).attr('y2',H-m.b);
+      punto.attr('cx',x(c)).attr('cy',y(p));
+      rot.attr('x',Math.min(Math.max(x(c),m.l+30),W-m.r-30)).attr('y',y(p)-16).text(pct(p)+'%');
+      $('r-llamadas').innerHTML='<span><small>'+T('Llegan','Received')+'</small><b>'+c+'</b>'+T('llamadas al día','calls a day')+'</span><span><small>'+T('Se auditan','Audited')+'</small><b>'+CAP+'</b>'+T('con 2 personas','with 2 people')+'</span><span><small>'+T('Cobertura manual','Manual coverage')+'</small><b>'+pct(p)+'%</b>'+T('sin auditar: ','not audited: ')+(c-CAP)+'</span>';
+    }
+    updRef=upd;
+    if(!slBound){ sl.addEventListener('input',function(){ if(updRef)updRef(); }); slBound=true; }
+    upd();
+  }
+
+  /* 3. Tiempo y errores que se eliminaron */
+  function reduccion(){
+    var datos=[
+      {k:T('Estados financieros: tiempo de transcripción','Financial statements: transcription time'),v:95,t:T('Se eliminó la transcripción manual','Manual transcription was eliminated'),b:T('Los analistas ya no pasan a mano los estados financieros de los PDF a Excel. La solución con OCR extrae y estructura la información.','Analysts no longer copy financial statements by hand from PDFs to Excel. The OCR solution extracts and structures the information.')},
+      {k:T('Documentación de modelos: tiempo','Model documentation: time'),v:90,t:T('Se eliminó la documentación manual','Manual documentation was eliminated'),b:T('Se acabó la documentación que se hacía a mano y quedaba incompleta o con una redacción que no se entendía. Agentes de IA la generan.','Documentation is no longer written by hand, where it ended up incomplete or unclear. AI agents generate it.')},
+      {k:T('Diccionarios de datos: tiempo','Data dictionaries: time'),v:90,t:T('Se eliminó la construcción manual','Manual building was eliminated'),b:T('Los diccionarios de datos ya no se construyen a mano, donde quedaban incompletos o mal documentados.','Data dictionaries are no longer built by hand, where they ended up incomplete or poorly documented.')},
+      {k:T('Estados financieros: errores','Financial statements: errors'),v:90,t:T('Se eliminaron errores de digitación','Typing errors were eliminated'),b:T('Al no transcribir a mano, desaparecen la mayoría de los errores humanos de digitación al pasar las cifras a Excel.','By not transcribing by hand, most human typing errors when moving figures to Excel disappear.')},
+      {k:T('Auditoría de llamadas: tiempo','Call auditing: time'),v:80,t:T('Se eliminó la auditoría manual','Manual auditing was eliminated'),b:T('Ya no hay que escuchar y calificar cada llamada a mano: el transcriptor y el agente en Copilot evalúan la calidad de cada una.','Calls no longer have to be listened to and scored by hand: the transcriber and the Copilot agent evaluate the quality of each one.')},
+      {k:T('Historias de usuario: tiempo de diseño','User stories: design time'),min:40,max:70,t:T('Se eliminó redacción manual y reprocesos','Manual writing and rework were eliminated'),b:T('La IA apoya la redacción de las historias de usuario, que podían quedar mal documentadas, incompletas o difíciles de entender. El ahorro va de 40% a 70%.','AI supports writing the user stories, which could end up poorly documented, incomplete or hard to understand. Savings range from 40% to 70%.')}
+    ];
+    var W=620,rowH=58,H=datos.length*rowH+34,r=64;
+    var svg=svgBase('#g-reduccion',W,H,T('Reducciones de tiempo y errores por solución','Time and error reductions by solution'));
+    var x=d3.scaleLinear().domain([0,100]).range([0,W-r]);
+    svg.append('g').attr('class','tick').attr('transform','translate(0,'+(H-26)+')').call(d3.axisBottom(x).tickValues([0,20,40,60,80,100]).tickFormat(function(d){return d+'%';}).tickSize(-(H-26)).tickPadding(10));
+    svg.selectAll('.tick line').attr('stroke','#262626'); svg.select('.domain').remove();
+    var barras=[];
+    datos.forEach(function(d,i){
+      var yy=i*rowH+8;
+      var g=svg.append('g').attr('class','clic').attr('tabindex',0);
+      g.append('rect').attr('x',0).attr('y',yy-2).attr('width',W).attr('height',rowH-6).attr('fill','transparent');
+      g.append('text').attr('class','etq').attr('x',0).attr('y',yy+12).style('font-size','13.5px').text(d.k);
+      var rs=[];
+      if(d.v!==undefined){
+        rs.push(g.append('rect').attr('x',0).attr('y',yy+22).attr('height',20).attr('rx',3).attr('fill',ORO).attr('width',0).transition().delay(i*90).duration(dur).attr('width',x(d.v)).selection());
+        g.append('text').attr('class','val').attr('x',x(d.v)+10).attr('y',yy+38).text(d.v+'%');
+      } else {
+        rs.push(g.append('rect').attr('x',x(d.min)).attr('y',yy+22).attr('height',20).attr('rx',3).attr('fill','none').attr('stroke',ORO).attr('stroke-width',2).attr('stroke-dasharray','5 4').attr('width',0).transition().delay(i*90).duration(dur).attr('width',x(d.max)-x(d.min)).selection());
+        rs.push(g.append('rect').attr('x',0).attr('y',yy+22).attr('height',20).attr('rx',3).attr('fill',ORO).attr('width',0).transition().delay(i*90).duration(dur).attr('width',x(d.min)).selection());
+        g.append('text').attr('class','val').attr('x',x(d.max)+10).attr('y',yy+38).text(d.min+'–'+d.max+'%');
+      }
+      barras.push(rs);
+      var fn=function(){
+        barras.forEach(function(arr){arr.forEach(function(s){ if(s.attr('fill')!=='none'){s.attr('fill',ORO);} else {s.attr('stroke',ORO);} });});
+        rs.forEach(function(s){ if(s.attr('fill')!=='none'){s.attr('fill',BL);} else {s.attr('stroke',BL);} });
+        info('i-reduccion',d.t,d.b,d.v!==undefined?d.v+T('% de reducción','% reduction'):d.min+T('% a ','% to ')+d.max+T('% de reducción','% reduction'));
+      };
+      g.on('click',fn).on('keydown',function(e){if(e.key==='Enter'||e.key===' '){fn();}});
+    });
+  }
+
+  /* 4. Estados financieros: dos medidores */
+  function estados(){
+    var W=520,H=240;
+    var svg=svgBase('#g-estados',W,H,T('Estados financieros: 95% menos tiempo y 90% menos errores','Financial statements: 95% less time and 90% fewer errors'));
+    var arc=d3.arc().innerRadius(62).outerRadius(84).cornerRadius(4).startAngle(0);
+    [{cx:135,v:95,t:T('menos tiempo','less time')},{cx:385,v:90,t:T('menos errores','fewer errors')}].forEach(function(d,i){
+      var g=svg.append('g').attr('transform','translate('+d.cx+',108)');
+      g.append('path').attr('d',arc.endAngle(2*Math.PI)()).attr('fill','#2a2a2a');
+      var f=g.append('path').attr('fill',ORO);
+      f.transition().delay(i*200).duration(dur).attrTween('d',function(){var ip=d3.interpolate(0,2*Math.PI*d.v/100);return function(t){return arc.endAngle(ip(t))();};});
+      g.append('text').attr('text-anchor','middle').attr('y',12).attr('fill',BL).style('font-family','Playfair Display, serif').style('font-size','38px').style('font-weight','700').text(d.v+'%');
+      svg.append('text').attr('class','etq').attr('x',d.cx).attr('y',222).attr('text-anchor','middle').text(d.t);
+    });
+  }
+
+  /* 5. Analítica: antes y después (índice 100) */
+  function analitica(){
+    var W=520,H=250;
+    var svg=svgBase('#g-analitica',W,H,T('Documentación y diccionarios de datos: 90% menos tiempo','Documentation and data dictionaries: 90% less time'));
+    var x=d3.scaleLinear().domain([0,100]).range([0,W-70]);
+    var grupos=[T('Documentación de modelos','Model documentation'),T('Diccionarios de datos','Data dictionaries')];
+    grupos.forEach(function(k,i){
+      var y0=i*118+8;
+      svg.append('text').attr('class','etq').attr('x',0).attr('y',y0+8).text(k);
+      [{n:T('Antes','Before'),v:100,c:'#5a5a5a'},{n:T('Con IA','With AI'),v:10,c:ORO}].forEach(function(d,j){
+        var yy=y0+20+j*40;
+        svg.append('rect').attr('x',0).attr('y',yy).attr('height',28).attr('rx',3).attr('fill',d.c).attr('width',0).transition().delay(i*150+j*250).duration(dur).attr('width',x(d.v));
+        svg.append('text').attr('class','etq').attr('x',10).attr('y',yy+19).style('font-size','12px').style('fill',j?'#bdbdbd':'#f2f2f2').text(j?'':d.n);
+        svg.append('text').attr('class','val').attr('x',x(d.v)+10).attr('y',yy+21).text(j?T('10  (90% menos)','10  (90% less)'):'100');
+      });
+    });
+  }
+
+  /* 6. Aceptación: arco 96,6% + 30 perfiles en bucle */
+  var timersAcep=[];
+  function aceptacion(){
+    timersAcep.forEach(clearTimeout); timersAcep=[];
+    var W=640,H=250;
+    var svg=svgBase('#g-aceptacion',W,H,T('96,6% de aceptación: 29 de 30 participantes aceptaron los personajes con IA','96.6% acceptance: 29 of 30 participants accepted the AI characters'));
+    var arc=d3.arc().innerRadius(88).outerRadius(120).startAngle(-Math.PI/2).cornerRadius(4);
+    var g=svg.append('g').attr('transform','translate(140,170)');
+    g.append('path').attr('d',arc.endAngle(Math.PI/2)()).attr('fill','#2a2a2a');
+    var f=g.append('path').attr('fill',ORO);
+    var fin=-Math.PI/2+Math.PI*0.966;
+    f.transition().duration(dur).attrTween('d',function(){var i=d3.interpolate(-Math.PI/2,fin);return function(t){return arc.endAngle(i(t))();};});
+    g.append('text').attr('text-anchor','middle').attr('y',-6).attr('fill',BL).style('font-family','Playfair Display, serif').style('font-size','42px').style('font-weight','700').text(T('96,6%','96.6%'));
+    g.append('text').attr('class','etq').attr('text-anchor','middle').attr('y',20).style('fill','#bdbdbd').text(T('de aceptación','acceptance'));
+
+    var pg=svg.append('g').attr('class','clic').attr('transform','translate(300,22)');
+    pg.append('rect').attr('x',-10).attr('y',-10).attr('width',340).attr('height',170).attr('fill','transparent');
+    var pers=[];
+    for(var i=0;i<30;i++){
+      var gp=pg.append('g').attr('transform','translate('+((i%10)*33+14)+','+(Math.floor(i/10)*52+18)+')');
+      gp.append('circle').attr('cy',-6).attr('r',7);
+      gp.append('path').attr('d','M-11,14 C-11,2 11,2 11,14 Z');
+      gp.append('path').attr('class','x').attr('d','M-10,-14 L10,16 M10,-14 L-10,16').attr('stroke','#ff5a5a').attr('stroke-width',3).attr('fill','none').attr('opacity',0);
+      gp.selectAll('circle,path:not(.x)').attr('fill','#2f2f2f');
+      pers.push(gp);
+    }
+    var cont=svg.append('text').attr('class','val').attr('x',300).attr('y',216).style('font-size','17px');
+    var De=T(' de 30',' of 30');
+    function limpiar(){timersAcep.forEach(clearTimeout);timersAcep=[];}
+    function estadoFinal(){
+      pers.forEach(function(p,i){ if(i<29){p.selectAll('circle,path:not(.x)').attr('fill',ORO);} else {p.selectAll('circle,path:not(.x)').attr('fill','#7a2a2a'); p.select('.x').attr('opacity',1);} });
+      cont.text(T('29 de 30 lo aceptaron','29 of 30 accepted'));
+    }
+    function ciclo(){
+      limpiar();
+      pers.forEach(function(p){p.selectAll('circle,path:not(.x)').attr('fill','#2f2f2f');p.select('.x').attr('opacity',0);});
+      cont.text('0'+De);
+      pers.forEach(function(p,i){
+        timersAcep.push(setTimeout(function(){
+          if(i<29){p.selectAll('circle,path:not(.x)').attr('fill',ORO);cont.text((i+1)+De);}
+          else {p.selectAll('circle,path:not(.x)').attr('fill','#7a2a2a');p.select('.x').attr('opacity',1);cont.text(T('29 de 30 lo aceptaron; 1 no','29 of 30 accepted; 1 did not'));}
+        },500+i*130));
+      });
+      timersAcep.push(setTimeout(ciclo,500+30*130+3500));
+    }
+    if(reduce){ estadoFinal(); } else { ciclo(); }
+    pg.on('click',function(){ if(!reduce){ciclo();} });
+  }
+
+  /* 7. Dos canales: sunburst */
+  function canales(){
+    var W=520,H=500,cx=260,cy=250;
+    var svg=svgBase('#g-canales',W,H,T('Dos canales con IA: agente de WhatsApp y analítica en lenguaje natural','Two AI channels: WhatsApp agent and natural language analytics'));
+    var TT=2*Math.PI, P=Math.PI;
+    var S=[
+      {id:'wa',a0:0,a1:P,r0:70,r1:155,t:T('Agente de WhatsApp','WhatsApp agent'),f:ORO,c:'#0B0B0B',
+       h:T('Agente de servicios financieros','Financial services agent'),b:T('Un agente conversacional informativo y transaccional, habilitado en WhatsApp, que responde de manera automática a los afiliados sobre los productos y servicios financieros de la unidad y les permite consultar sus productos activos.','An informational and transactional conversational agent, enabled on WhatsApp, that automatically answers members about the unit\'s financial products and services and lets them check their active products.')},
+      {id:'an',a0:P,a1:TT,r0:70,r1:155,t:T('Analítica en lenguaje natural','Natural language analytics'),f:'#f2f2f2',c:'#0B0B0B',
+       h:T('Analítica en lenguaje natural','Natural language analytics'),b:T('Una solución que, con lenguaje natural, permite estructurar de manera fácil, rápida y sencilla las bases de datos de los créditos ya preaprobados.','A solution that, using natural language, structures the pre-approved credit databases in an easy, fast and simple way.')},
+      {id:'wa1',a0:0,a1:P/2,r0:159,r1:245,t:T('+5.000 conversaciones','+5,000 conversations'),f:'#8A6A0F',c:'#fff',
+       h:T('Más de 5.000 conversaciones','Over 5,000 conversations'),b:T('En el último año el agente atendió más de 5.000 conversaciones por este canal, mejorando la experiencia de los afiliados que buscan información.','In the last year the agent handled more than 5,000 conversations on this channel, improving the experience of members looking for information.')},
+      {id:'wa2',a0:P/2,a1:P,r0:159,r1:245,t:T('30 segundos vs 10+ minutos','30 seconds vs 10+ minutes'),f:'#8A6A0F',c:'#fff',
+       h:T('30 segundos frente a 10 minutos o más','30 seconds versus 10 minutes or more'),b:T('Una llamada con un asesor puede durar 10 minutos o más: entrar a la base de datos, validar la pregunta y enviar la respuesta. El agente responde en promedio en 30 segundos, al menos 20 veces más rápido. Para el afiliado, es instantáneo y no depende de una persona.','A call with an advisor can take 10 minutes or more: accessing the database, validating the question and sending the answer. The agent answers in 30 seconds on average, at least 20 times faster. For the member it is instant and does not depend on a person.')},
+      {id:'an1',a0:P,a1:3*P/2,r0:159,r1:245,t:T('3 días a minutos','3 days to minutes'),f:'#bdbdbd',c:'#0B0B0B',
+       h:T('De 3 días a minutos','From 3 days to minutes'),b:T('Una solicitud de bases de créditos preaprobados que tomaba 3 días ahora se resuelve en minutos.','A request for pre-approved credit databases that used to take 3 days is now resolved in minutes.')},
+      {id:'an2',a0:3*P/2,a1:TT,r0:159,r1:245,t:T('Eficiencia de producción','Production efficiency'),f:'#bdbdbd',c:'#0B0B0B',
+       h:T('Eficiencia de producción','Production efficiency'),b:T('La misma entrega se produce en minutos en lugar de 3 días y el equipo de analítica dedica menos tiempo a tareas operativas. Para quien la solicita, ya no depende de un humano y es instantánea.','The same deliverable is produced in minutes instead of 3 days and the analytics team spends less time on operational tasks. For whoever requests it, it no longer depends on a human and is instant.')}
+    ];
+    var gen=d3.arc().cornerRadius(3).padAngle(0.015);
+    var general=function(){ info('i-canales',T('Dos canales con IA','Two channels with AI'),T('Un agente en WhatsApp que responde de forma automática a los afiliados, y una solución en lenguaje natural que entrega bases de datos de créditos preaprobados en minutos. Haz clic en cada sector para ver el detalle.','A WhatsApp agent that answers members automatically, and a natural language solution that delivers pre-approved credit databases in minutes. Click each sector for the detail.')); svg.selectAll('.sec').attr('opacity',1); };
+    var g=svg.append('g').attr('transform','translate('+cx+','+cy+')');
+    S.forEach(function(s,i){
+      var a=g.append('g').attr('class','sec clic').attr('opacity',0);
+      a.append('path').attr('fill',s.f).attr('d',gen({innerRadius:s.r0,outerRadius:s.r1,startAngle:s.a0,endAngle:s.a1}));
+      var cen=gen.centroid({innerRadius:s.r0,outerRadius:s.r1,startAngle:s.a0,endAngle:s.a1});
+      var lines=trozos(s.t,s.r1>200?12:11);
+      var tx=a.append('text').attr('text-anchor','middle').attr('fill',s.c).style('font-size','13px').style('font-weight','700').style('font-family','DM Sans, sans-serif');
+      lines.forEach(function(l,j){tx.append('tspan').attr('x',cen[0]).attr('y',cen[1]+(j-(lines.length-1)/2)*16+4).text(l);});
+      a.transition().delay(i*120).duration(dur*0.5).attr('opacity',1);
+      a.on('click',function(){ svg.selectAll('.sec').attr('opacity',0.45); d3.select(this).attr('opacity',1); info('i-canales',s.h,s.b); });
+    });
+    var centro=g.append('g').attr('class','clic');
+    centro.append('circle').attr('r',66).attr('fill','#0B0B0B').attr('stroke',ORO).attr('stroke-width',2);
+    centro.append('text').attr('text-anchor','middle').attr('y',-2).attr('fill',ORO2).style('font-family','Playfair Display, serif').style('font-size','16px').style('font-weight','700').text(T('Dos canales','Two channels'));
+    centro.append('text').attr('text-anchor','middle').attr('y',18).attr('fill','#bdbdbd').style('font-size','12px').text(T('con IA','with AI'));
+    centro.on('click',general);
+    general();
+  }
+
+  /* 8. Cultura de IA: grafo circular */
+  function cultura(){
+    var W=640,H=520,R=170;
+    var svg=svgBase('#g-cultura',W,H,T('Herramientas de Copilot y sus conexiones, agrupadas por aplicación','Copilot tools and their connections, grouped by application'));
+    var N1='Microsoft 365', N2='Power Platform', N3=T('Chat y agentes','Chat and agents');
+    var C={}; C[N1]=ORO; C[N2]='#f2f2f2'; C[N3]='#9a9a9a';
+    var F=[
+      {name:N1,children:['Word','Excel','PowerPoint','Outlook','Teams'],d:T('Copilot dentro de las aplicaciones de uso diario: redactar, analizar, crear presentaciones y resumir correos y reuniones.','Copilot inside everyday applications: writing, analyzing, creating presentations and summarizing emails and meetings.')},
+      {name:N2,children:['Power Apps','Power Automate'],d:T('Copilot para construir aplicaciones y automatizar procesos. Si estás en Power Apps, solo ves lo de Power Platform.','Copilot to build applications and automate processes. If you are in Power Apps, you only see what belongs to Power Platform.')},
+      {name:N3,children:['Copilot Chat','Agentes','Copilot Studio'].map(function(x){return x==='Agentes'?T('Agentes','Agents'):x;}),d:T('El asistente conversacional y los agentes, que se conectan a la información de la organización.','The conversational assistant and the agents, which connect to the organization\'s information.')}
+    ];
+    var AG=T('Agentes','Agents');
+    var L=[['Copilot Chat','Word'],['Copilot Chat','Excel'],['Copilot Chat','PowerPoint'],['Copilot Chat','Outlook'],['Copilot Chat','Teams'],['Copilot Chat',AG],
+      [AG,'Copilot Studio'],['Copilot Studio','Teams'],['Copilot Studio','Power Automate'],['Power Apps','Power Automate'],['Power Apps','Teams'],['Power Automate','Outlook'],['Power Automate','Teams'],['Word','PowerPoint'],['Excel','PowerPoint']];
+    var root=d3.hierarchy({name:'Copilot',children:F.map(function(f){return {name:f.name,children:f.children.map(function(n){return {name:n,fam:f.name};})};})});
+    d3.cluster().size([2*Math.PI,R])(root);
+    var leaves=root.leaves(), por={};
+    leaves.forEach(function(l){por[l.data.name]=l;l.deg=0;});
+    var enl=L.map(function(p){por[p[0]].deg++;por[p[1]].deg++;return {a:por[p[0]],b:por[p[1]]};});
+    var line=d3.lineRadial().curve(d3.curveBundle.beta(0.85)).radius(function(d){return d.y;}).angle(function(d){return d.x;});
+    var g=svg.append('g').attr('transform','translate('+W/2+','+H/2+')');
+    var lk=g.append('g').selectAll('path').data(enl).join('path')
+      .attr('d',function(e){return line(e.a.path(e.b));}).attr('fill','none')
+      .attr('stroke',function(e){return C[e.a.data.fam];}).attr('stroke-opacity',0).attr('stroke-width',1.6);
+    lk.transition().delay(300).duration(dur).attr('stroke-opacity',0.45);
+    var nd=g.append('g').selectAll('g').data(leaves).join('g').attr('class','clic')
+      .attr('transform',function(d){return 'rotate('+(d.x*180/Math.PI-90)+') translate('+d.y+',0)';}).attr('opacity',0);
+    nd.transition().delay(function(d,i){return i*60;}).duration(dur*0.5).attr('opacity',1);
+    nd.append('circle').attr('r',function(d){return 4+d.deg*1.4;}).attr('fill',function(d){return C[d.data.fam];}).attr('stroke','#0B0B0B').attr('stroke-width',1.5);
+    nd.append('text').attr('dy','0.32em').attr('x',function(d){return d.x<Math.PI?(10+d.deg*1.4):-(10+d.deg*1.4);})
+      .attr('text-anchor',function(d){return d.x<Math.PI?'start':'end';})
+      .attr('transform',function(d){return d.x>=Math.PI?'rotate(180)':null;})
+      .attr('fill',function(d){return C[d.data.fam];}).style('font-size','13px').text(function(d){return d.data.name;});
+    var filtro=null;
+    function pinta(foco){
+      lk.attr('stroke-opacity',function(e){
+        if(!foco) return filtro?(e.a.data.fam===filtro||e.b.data.fam===filtro?0.5:0.04):0.45;
+        return (e.a===foco||e.b===foco)?0.95:0.04;
+      }).attr('stroke-width',function(e){return foco&&(e.a===foco||e.b===foco)?2.4:1.6;});
+      nd.attr('opacity',function(d){
+        var vis=!filtro||d.data.fam===filtro;
+        if(!vis) return 0.12;
+        if(!foco) return 1;
+        if(d===foco) return 1;
+        return enl.some(function(e){return (e.a===foco&&e.b===d)||(e.b===foco&&e.a===d);})?1:0.25;
+      });
+    }
+    nd.on('mouseenter',function(ev,d){pinta(d);}).on('mouseleave',function(){pinta(null);})
+      .on('click',function(ev,d){pinta(d);});
+    var b=$('b-cultura'); b.innerHTML='';
+    var gen=T('Cada herramienta de Copilot vive dentro de una aplicación y se conecta con otras. Elige una aplicación para ver solo lo que corresponde a ella. Las conexiones son ilustrativas.','Each Copilot tool lives inside an application and connects with others. Pick an application to see only what belongs to it. The connections are illustrative.');
+    function boton(txt,fam,d){
+      var bt=document.createElement('button');bt.type='button';bt.textContent=txt;bt.setAttribute('aria-pressed',fam===null?'true':'false');
+      bt.onclick=function(){
+        Array.prototype.forEach.call(b.children,function(x){x.setAttribute('aria-pressed','false');});
+        bt.setAttribute('aria-pressed','true'); filtro=fam; pinta(null);
+        info('i-cultura',fam||T('Todas las herramientas','All tools'),d);
+      };
+      b.appendChild(bt);
+    }
+    boton(T('Todas','All'),null,gen);
+    F.forEach(function(f){boton(f.name,f.name,f.d);});
+    info('i-cultura',T('Todas las herramientas','All tools'),gen);
+  }
+
+  /* 9. Huellas Naranja */
+  function huellas(){
+    var W=640,H=210;
+    var svg=svgBase('#g-huellas',W,H,T('Línea de tiempo de Huellas Naranja de 2022 a 2024','Huellas Naranja timeline from 2022 to 2024'));
+    var E=[
+      {y:'2022',n:T('Nace la iniciativa','The initiative begins'),x:100,t:T('2022: nace la iniciativa','2022: the initiative begins'),b:T('Compensar todavía no tenía una oferta para familias con mascotas. Se ideó la iniciativa y se validó con usuarios.','Compensar did not yet have an offer for families with pets. The initiative was conceived and validated with users.')},
+      {y:'2023',n:T('Escalamiento','Scaling'),x:320,t:T('2023: escalamiento','2023: scaling'),b:T('Al empezar el escalamiento, saqué adelante la iniciativa y la articulé con el equipo que iba a operarla.','When scaling began, I carried the initiative forward and coordinated it with the team that would run it.')},
+      {y:'2024',n:T('Entrega y crecimiento','Handover and growth'),x:540,t:T('2024: entrega y crecimiento','2024: handover and growth'),b:T('Dejé la comunidad operando con el equipo que hoy la gestiona, con 300 familias que ya accedían al beneficio y en crecimiento, y espacios para las mascotas en sedes como Lago Mar y la sede de la 200.','I left the community running with the team that manages it today, with 300 families already using the benefit and growing, and spaces for pets at sites such as Lago Mar and the 200th street site.')}
+    ];
+    var ln=svg.append('line').attr('x1',40).attr('x2',40).attr('y1',100).attr('y2',100).attr('stroke',ORO).attr('stroke-width',3);
+    ln.transition().duration(dur*1.2).attr('x2',600);
+    E.forEach(function(e,i){
+      var g=svg.append('g').attr('class','clic').attr('tabindex',0).attr('opacity',0);
+      g.append('rect').attr('x',e.x-90).attr('y',30).attr('width',180).attr('height',150).attr('fill','transparent');
+      g.append('text').attr('class','val').attr('x',e.x).attr('y',60).attr('text-anchor','middle').style('font-size','22px').text(e.y);
+      var c=g.append('circle').attr('cx',e.x).attr('cy',100).attr('r',13).attr('fill',ORO).attr('stroke','#0B0B0B').attr('stroke-width',4);
+      g.append('text').attr('class','etq').attr('x',e.x).attr('y',140).attr('text-anchor','middle').text(e.n);
+      g.transition().delay(300+i*350).duration(dur*0.5).attr('opacity',1);
+      var fn=function(){
+        svg.selectAll('circle').attr('r',13).attr('fill',ORO);
+        c.attr('r',17).attr('fill',BL);
+        info('i-huellas',e.t,e.b);
+      };
+      act(g,fn);
+      g.on('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){fn();}});
+    });
+    info('i-huellas',T('Tres etapas','Three stages'),T('Pasa el cursor o haz clic en cada año.','Hover or click each year.'));
+  }
+
+  /* 10. Proyecto personal */
+  function proyecto(){
+    var W=520,rowH=56,P=[
+      {n:T('Perfiles y descripción del cargo','Profiles and job description'),b:T('Los perfiles profesionales llegan a recursos humanos por una API y se comparan con la descripción del empleo.','Professional profiles reach human resources through an API and are compared against the job description.')},
+      {n:T('Top 10 con LangChain y embeddings','Top 10 with LangChain and embeddings'),b:T('LangChain y los embeddings ordenan los perfiles según qué tan cerca están de lo que pide el cargo y seleccionan el top 10.','LangChain and the embeddings rank the profiles by how close they are to what the role asks for and select the top 10.')},
+      {n:T('RR.HH. lee y valida el top 10','HR reads and validates the top 10'),b:T('Recursos humanos lee los perfiles y valida el top 10. La herramienta apoya, y quien decide siempre es recursos humanos.','Human resources reads the profiles and validates the top 10. The tool supports, and human resources always decides.')},
+      {n:T('Correos a los candidatos','Emails to candidates'),b:T('LangChain envía el correo a cada candidato: agradecimiento para quienes no pasaron y la buena noticia para quienes siguen.','LangChain sends each candidate an email: a thank-you for those who did not pass and the good news for those who continue.')},
+      {n:T('Guion de preguntas técnicas','Technical question script'),b:T('A quienes pasan se les genera un guion de preguntas técnicas, enfocado en lo que le falta a su perfil para ser ideal para el cargo.','For those who pass, a script of technical questions is generated, focused on what their profile still lacks to be ideal for the role.')},
+      {n:T('RR.HH. aplica las pruebas psicotécnicas','HR runs the psychotechnical tests'),b:T('Recursos humanos aplica las pruebas psicotécnicas correspondientes y se concentra en las fortalezas de cada candidato.','Human resources runs the corresponding psychotechnical tests and focuses on each candidate\'s strengths.')},
+      {n:T('Top 3 - envío de mensajes','Top 3 - sending messages'),b:T('Al seleccionar los 3 mejores perfiles, el resto recibe un mensaje automático. Nadie queda sin saber cómo va el proceso.','When the 3 best profiles are selected, the rest receive an automatic message. Nobody is left wondering how the process is going.')}
+    ];
+    var H=P.length*rowH+8;
+    var svg=svgBase('#g-proyecto',W,H,T('Proceso de selección asistida por IA en siete pasos','AI-assisted selection process in seven steps'));
+    svg.append('line').attr('x1',24).attr('x2',24).attr('y1',28).attr('y2',H-36).attr('stroke','#3a3a3a').attr('stroke-width',2);
+    P.forEach(function(p,i){
+      var y=i*rowH+4;
+      var g=svg.append('g').attr('class','clic').attr('tabindex',0).attr('opacity',0);
+      var r=g.append('rect').attr('x',50).attr('y',y).attr('width',W-50).attr('height',rowH-10).attr('rx',6).attr('fill','#101010').attr('stroke','#3a3a3a');
+      g.append('circle').attr('cx',24).attr('cy',y+(rowH-10)/2).attr('r',14).attr('fill',ORO);
+      g.append('text').attr('x',24).attr('y',y+(rowH-10)/2+5).attr('text-anchor','middle').attr('fill','#0B0B0B').style('font-weight','700').style('font-size','14px').text(i+1);
+      g.append('text').attr('class','etq').attr('x',66).attr('y',y+(rowH-10)/2+5).style('font-size','14px').text(p.n);
+      g.transition().delay(i*120).duration(dur*0.5).attr('opacity',1);
+      var fn=function(){ svg.selectAll('rect').attr('stroke','#3a3a3a').attr('fill','#101010'); r.attr('stroke',ORO).attr('fill','#1b1708'); info('i-proyecto',T('Paso ','Step ')+(i+1)+': '+p.n,p.b); };
+      g.on('click',fn).on('keydown',function(e){if(e.key==='Enter'||e.key===' '){fn();}});
+    });
+    info('i-proyecto',T('Proceso en siete pasos','Process in seven steps'),T('Haz clic en un paso para ver qué pasa en cada uno.','Click a step to see what happens in each one.'));
+    var s2=svgBase('#g-avance',460,22,T('Avance del proyecto: 70%','Project progress: 70%'));
+    s2.append('rect').attr('x',0).attr('y',6).attr('width',460).attr('height',10).attr('rx',5).attr('fill','#2a2a2a');
+    s2.append('rect').attr('x',0).attr('y',6).attr('height',10).attr('rx',5).attr('fill',ORO).attr('width',0).transition().duration(dur).attr('width',460*0.7);
+    componentes();
+  }
+
+  /* Componentes de la herramienta */
+  function componentes(){
+    var ok=$('b-ok'), falta=$('b-falta'); ok.innerHTML=''; falta.innerHTML='';
+    var K=[
+      {n:T('LangChain (orquestador)','LangChain (orchestrator)'),t:T('Cómo funciona LangChain en este modelo','How LangChain works in this model'),
+       b:T('LangChain es el orquestador: un solo flujo que coordina todos los pasos. Recibe la descripción del cargo y los perfiles, llama a los embeddings para ordenarlos, entrega el top 10 a recursos humanos y, una vez validado, genera el guion de preguntas técnicas y envía los correos. Es el mismo orquestador de principio a fin.','LangChain is the orchestrator: a single flow that coordinates every step. It receives the job description and the profiles, calls the embeddings to rank them, hands the top 10 to human resources and, once validated, generates the technical question script and sends the emails. It is the same orchestrator from start to finish.')},
+      {n:'Embeddings',t:T('Cómo funcionan los embeddings','How embeddings work'),
+       b:T('Un embedding convierte un texto en una lista de números que captura su significado. Se hace con la descripción del cargo y con cada perfil. Los textos con significado parecido quedan cerca en ese espacio numérico, así que se mide qué tan cerca está cada perfil de lo que pide el cargo y se ordenan de más a menos cercano. Los 10 primeros son el top 10. Así se compara por significado y no solo por palabras exactas.','An embedding turns a text into a list of numbers that captures its meaning. It is done for the job description and for each profile. Texts with similar meaning end up close together in that numeric space, so the tool measures how close each profile is to what the role asks for and ranks them from closest to farthest. The first 10 form the top 10. This compares by meaning and not only by exact words.')},
+      {n:T('Base de datos','Database'),t:T('Base de datos','Database'),
+       b:T('Guarda los perfiles y los datos del proceso. Funciona con Excel, TXT, MongoDB o SQL según lo que use cada empresa, y la herramienta se adapta a cualquiera de ellos.','It stores the profiles and the process data. It works with Excel, TXT, MongoDB or SQL depending on what each company uses, and the tool adapts to any of them.')},
+      {n:T('Envío de correos','Email sending'),t:T('Envío de correos con un mismo orquestador','Email sending with the same orchestrator'),
+       b:T('El mismo orquestador envía todos los correos: agradecimiento para quienes no pasaron y la buena noticia, junto con el guion de preguntas técnicas, para quienes siguen. Cuando se eligen los 3 mejores, el resto recibe un mensaje automático. Todos los mensajes salen del mismo flujo.','The same orchestrator sends all the emails: a thank-you for those who did not pass and the good news, together with the technical question script, for those who continue. When the 3 best are chosen, the rest receive an automatic message. Every message comes out of the same flow.')}
+    ];
+    var pend={n:T('API para retomar el proceso','API to resume the process'),t:T('Lo que falta: la API','What is missing: the API'),
+       b:T('Falta la estructura de la API para que, cuando el proceso continúe otros días, se abra la base de datos y se retome la interacción con los candidatos donde se quedó.','The API structure is still missing so that, when the process continues on later days, the database is reopened and the interaction with candidates resumes where it left off.')};
+    function mk(cont,it,cls){
+      var bt=document.createElement('button'); bt.type='button'; bt.textContent=it.n; bt.setAttribute('aria-pressed','false'); if(cls)bt.className=cls;
+      bt.onclick=function(){
+        Array.prototype.forEach.call(ok.children,function(x){x.setAttribute('aria-pressed','false');});
+        Array.prototype.forEach.call(falta.children,function(x){x.setAttribute('aria-pressed','false');});
+        bt.setAttribute('aria-pressed','true'); info('i-comp',it.t,it.b);
+      };
+      cont.appendChild(bt);
+    }
+    K.forEach(function(k){mk(ok,k);}); mk(falta,pend,'pend');
+  }
+
+  var fns={'g-embudo':embudo,'g-cobertura':auditoria,'g-reduccion':reduccion,'g-estados':estados,'g-analitica':analitica,'g-aceptacion':aceptacion,'g-canales':canales,'g-cultura':cultura,'g-huellas':huellas,'g-proyecto':proyecto};
+  var hechos={};
+  function pintar(id){ if(hechos[id])return; hechos[id]=1; fns[id](); }
+  function limpiarTodo(){
+    ['g-embudo','g-cobertura','g-reduccion','g-estados','g-analitica','g-aceptacion','g-canales','g-cultura','g-huellas','g-proyecto','g-avance','b-escalados','b-cultura','b-ok','b-falta','i-embudo','i-canales','i-cultura','i-huellas','i-proyecto'].forEach(function(id){var e=$(id); if(e)e.innerHTML='';});
+  }
+  function cambiarIdioma(){
+    EN=!EN;
+    try{localStorage.setItem('lang',EN?'en':'es');}catch(e){}
+    timersAcep.forEach(clearTimeout); timersAcep=[];
+    limpiarTodo(); defaultsInfo();
+    Object.keys(hechos).forEach(function(id){ if(hechos[id]) fns[id](); });
+    if(!hechos['g-cobertura']){ $('r-llamadas').innerHTML=''; }
+    traducirEstatico();
+  }
+  defaultsInfo(); traducirEstatico();
+  $('btn-lang').addEventListener('click',cambiarIdioma);
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){pintar(e.target.id);io.unobserve(e.target);}});},{threshold:0.2});
+    Object.keys(fns).forEach(function(id){io.observe($(id));});
+  } else { Object.keys(fns).forEach(pintar); }
+
+  var items=document.querySelectorAll('.hito,.panel');
+  items.forEach(function(el){el.classList.add('aparece');});
+  if('IntersectionObserver' in window){
+    var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visto');io2.unobserve(e.target);}});},{threshold:0.05});
+    items.forEach(function(el){io2.observe(el);});
+  } else { items.forEach(function(el){el.classList.add('visto');}); }
+})();
+</script>
+</body>
+</html>
